@@ -8,12 +8,12 @@
 
 ## S<sub>0</sub> 状態の最小エネルギー構造を探索する
 
-はじめに、エチレンの S<sub>0</sub> 状態で最も小さなポテンシャルエネルギーを持つ構造（最小エネルギー構造）を探索してみましょう。GAMESS の入力ファイルは次のようになります。
+はじめに、エチレンの S<sub>0</sub> 状態で最も小さなポテンシャルエネルギーを持つ構造（最小エネルギー構造）を探索してみましょう。最小エネルギー構造を探索する計算のことを**構造最適化**（Geometery Optimization）と呼びます。GAMESS の入力ファイルは次のようになります。電子状態の計算には、密度汎関数（DFT）法を用いています。汎関数は BHHLYP、基底関数には 6-31G(d) です。
 
 ```
  $CONTRL
     RUNTYP=OPTIMIZE
-    SCFTYP= RHF
+    SCFTYP=RHF
     DFTTYP=BHHLYP
     ICHARG=0
     MULT=1
@@ -40,8 +40,7 @@ H 1  0.54000000 -0.93530000  0.00320000
  $END
 ```
 
-
-得られた出力ファイルは[こちら](https://raw.githubusercontent.com/yamnor/yamlab-note/main/ethylene-conical/optimize.log)。出力ファイルから、全エネルギーの変化を読み取ってみましょう。
+得られた出力ファイルは[こちら](https://raw.githubusercontent.com/yamnor/yamlab-note/main/ethylene-conical/optimize.log)。Python というプログラミング言語を用いて、出力ファイルから、構造最適化に伴う全エネルギーの変化を読み取って、グラフとして表してみましょう。Google Colab というサービスを使って、出力ファイルの解析を実際に実行してみることができます。
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yamnor/yamlab-note/blob/main/ethylene-conical/optimize.ipynb)
 
