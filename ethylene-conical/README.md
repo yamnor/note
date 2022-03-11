@@ -40,7 +40,10 @@ H 1  0.54000000 -0.93530000  0.00320000
  $END
 ```
 
-得られた出力ファイルは[こちら](https://raw.githubusercontent.com/yamnor/yamlab-note/main/ethylene-conical/optimize.log)。
+
+得られた出力ファイルは[こちら](https://raw.githubusercontent.com/yamnor/yamlab-note/main/ethylene-conical/optimize.log)。出力ファイルから、全エネルギーの変化を読み取ってみましょう。
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yamnor/yamlab-note/blob/main/ethylene-conical/optimize.ipynb)
 
 ## S<sub>0</sub> → S<sub>n</sub> 励起状態のエネルギーを解析する
 
