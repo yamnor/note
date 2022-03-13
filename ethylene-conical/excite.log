@@ -1,7 +1,7 @@
 
  Distributed Data Interface kickoff program.
  Initiating 1 compute processes on 1 nodes to run the following command:
- /usr/local/gamess/gamess.00.x /home/webmo/webmo/yamnor/65/input 
+ /usr/local/gamess/gamess.00.x /home/webmo/webmo/yamnor/79/input 
 
           *******************************************************
           *                                                     *
@@ -99,39 +99,38 @@
      JORGE LUIS GALVEZ VALLEJO (WEBSITE ADMINISTRATOR),
      PENG XU
 
- EXECUTION OF GAMESS BEGUN 17:45:13 10-MAR-2022    
+ EXECUTION OF GAMESS BEGUN 15:24:03 11-MAR-2022    
 
             ECHO OF THE FIRST FEW INPUT CARDS -
  INPUT CARD> $CONTRL                                                                        
- INPUT CARD>   RUNTYP=ENERGY                                                                
- INPUT CARD>   SCFTYP=RHF                                                                   
- INPUT CARD>   DFTTYP=BHHLYP                                                                
- INPUT CARD>   TDDFT=EXCITE                                                                 
- INPUT CARD>   ICHARG=0                                                                     
- INPUT CARD>   MULT=1                                                                       
- INPUT CARD>   COORD=UNIQUE                                                                 
- INPUT CARD> $END                                                                           
- INPUT CARD> $SYSTEM                                                                        
- INPUT CARD>   MWORDS=128                                                                   
- INPUT CARD> $END                                                                           
- INPUT CARD> $BASIS                                                                         
- INPUT CARD>   GBASIS=N31                                                                   
- INPUT CARD>   NGAUSS=6                                                                     
- INPUT CARD>   NDFUNC=1                                                                     
+ INPUT CARD>    RUNTYP=ENERGY                                                               
+ INPUT CARD>    TDDFT=EXCITE                                                                
+ INPUT CARD>    SCFTYP= RHF                                                                 
+ INPUT CARD>    DFTTYP=BHHLYP                                                               
+ INPUT CARD>    ICHARG=0                                                                    
+ INPUT CARD>    MULT=1                                                                      
+ INPUT CARD>    COORD=UNIQUE                                                                
  INPUT CARD> $END                                                                           
  INPUT CARD> $TDDFT                                                                         
- INPUT CARD>   NSTATE=3                                                                     
+ INPUT CARD>    NSTATE=5                                                                    
+ INPUT CARD> $END                                                                           
+ INPUT CARD> $SYSTEM                                                                        
+ INPUT CARD>    MWORDS=128                                                                  
+ INPUT CARD> $END                                                                           
+ INPUT CARD> $BASIS                                                                         
+ INPUT CARD>    GBASIS=N31 NGAUSS=6 NDFUNC=1                                                
  INPUT CARD> $END                                                                           
  INPUT CARD> $DATA                                                                          
  INPUT CARD>C2H4                                                                            
  INPUT CARD>C1 1                                                                            
- INPUT CARD>C 6  0.00000000  0.00000000  0.00000000                                         
- INPUT CARD>C 6 -1.32029884  0.00001048 -0.00023551                                         
+ INPUT CARD>C 6 0.00000000 0.00000000 0.00000000                                            
+ INPUT CARD>C 6 -1.32029884 0.00001048 -0.00023551                                          
  INPUT CARD>H 1 -1.88916197 -0.91657892 -0.00030266                                         
- INPUT CARD>H 1 -1.88916423  0.91658755 -0.00032712                                         
- INPUT CARD>H 1  0.56876188  0.91665251  0.00010461                                         
- INPUT CARD>H 1  0.56877229 -0.91667652  0.00003663                                         
+ INPUT CARD>H 1 -1.88916423 0.91658755 -0.00032712                                          
+ INPUT CARD>H 1 0.56876188 0.91665251 0.00010461                                            
+ INPUT CARD>H 1 0.56877229 -0.91667652 0.00003663                                           
  INPUT CARD> $END                                                                           
+ INPUT CARD>                                                                                
   128000000 WORDS OF MEMORY AVAILABLE
 
      BASIS OPTIONS
@@ -333,7 +332,7 @@
           ----------------------
           TDDFT INPUT PARAMETERS
           ----------------------
- NSTATE=       3 IROOT =       1 MULT  =       1
+ NSTATE=       5 IROOT =       1 MULT  =       1
  MAXVEC=      50 NTRIAL=       5 CNVTOL=  1.00E-07
  TDPRP =       F TRNSD =       F TAMMD =       F
  TPA   =       F ALPHA =       F BETA  =       F
@@ -349,14 +348,14 @@
 
  ..... DONE SETTING UP THE RUN .....
  STEP CPU TIME =     0.01 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    91.73%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    89.61%
 
           ********************
           1 ELECTRON INTEGRALS
           ********************
  ...... END OF ONE-ELECTRON INTEGRALS ......
  STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    92.26%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    90.20%
 
           -------------
           GUESS OPTIONS
@@ -376,7 +375,7 @@
     17=A       18=A   
  ...... END OF INITIAL ORBITAL SELECTION ......
  STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    91.16%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    90.87%
 
                     ----------------------
                     AO INTEGRAL TECHNOLOGY
@@ -419,8 +418,8 @@
  TOTAL NUMBER OF NONZERO TWO-ELECTRON INTEGRALS =              239369
          16 INTEGRAL RECORDS WERE STORED ON DISK FILE  8.
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.05 TOTAL CPU TIME =          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    49.83%
+ STEP CPU TIME =     0.06 TOTAL CPU TIME =          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    87.07%
 
           --------------------------
             R-BHHLYP SCF CALCULATION
@@ -473,7 +472,7 @@
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       3.6 SECONDS (       0.2 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       3.5 SECONDS (       0.2 SEC/ITER)
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL R-BHHLYP ENERGY IS      -78.5299343886 AFTER  15 ITERATIONS
@@ -820,8 +819,8 @@
    37  H  6  S    0.472224   0.131899  -0.108406
    38  H  6  S    0.040097  -0.306926   0.349063
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     3.61 TOTAL CPU TIME =          3.7 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          4.0 SECONDS, CPU UTILIZATION IS    92.06%
+ STEP CPU TIME =     3.58 TOTAL CPU TIME =          3.7 (      0.1 MIN)
+ TOTAL WALL CLOCK TIME=          3.8 SECONDS, CPU UTILIZATION IS    95.86%
 
      ---------------------------------------------------------------------
      PROPERTIES FOR THE BHHLYP   DFT FUNCTIONAL (RHF  TYPE) DENSITY MATRIX
@@ -969,7 +968,7 @@
     -0.000039    0.000013   -0.000012    0.000043
  ...... END OF PROPERTY EVALUATION ......
  STEP CPU TIME =     0.00 TOTAL CPU TIME =          3.7 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          4.0 SECONDS, CPU UTILIZATION IS    92.07%
+ TOTAL WALL CLOCK TIME=          3.8 SECONDS, CPU UTILIZATION IS    95.87%
 
  -----------------------------------------------------------------------
                     TDDFT CALCULATION FOR SCFTYP=RHF 
@@ -980,7 +979,7 @@
  -TDDFT RUNTIME PARAMETERS-
     TRIPLET  = F
     NONEQ    = T
-    NSTATE   =                    3
+    NSTATE   =                    5
     IROOT    =                    1
     NTRIAL   =                    5
     MAXVEC   =                   50
@@ -996,52 +995,64 @@
   LARGEST GAUSSIAN PRIMITIVE EXPONENT=     3047.5248800000 OF TYPE -S-
  ON ATOM NUMBER   1 HAS RADIAL NORMALIZATION=  1.000000
   
- MEM1  =      277875 MEM2  =        5156 MEMGRID=      306734
+ MEM1  =      518876 MEM2  =        5216 MEMGRID=      306734
  MEMPCM=           0 MEMEFP=           0
- TOTAL MEMORY REQUIRED FOR TD-DFT ITERATIONS IS      589766 WORDS.
+ TOTAL MEMORY REQUIRED FOR TD-DFT ITERATIONS IS      830827 WORDS.
 
- INITIAL VECTORS / MXVEC                     5 /                  150
+ INITIAL VECTORS / MXVEC                     5 /                  240
  ITERATION #                     1
     CURRENT VECTORS    1 TO   5 (   5 VECTORS)
     STATE NUMBER   1  ENERGY =    9.046980 EV
     STATE NUMBER   2  ENERGY =    9.751414 EV
     STATE NUMBER   3  ENERGY =    9.784830 EV
+    STATE NUMBER   4  ENERGY =    9.975226 EV
+    STATE NUMBER   5  ENERGY =   11.042640 EV
     MAX ERROR =  1.645E-01 / 1.000E-07
  ITERATION #                     2
-    CURRENT VECTORS    6 TO  11 (   6 VECTORS)
+    CURRENT VECTORS    6 TO  15 (  10 VECTORS)
     STATE NUMBER   1  ENERGY =    8.419974 EV
-    STATE NUMBER   2  ENERGY =    8.968302 EV
+    STATE NUMBER   2  ENERGY =    8.968145 EV
     STATE NUMBER   3  ENERGY =    9.690165 EV
+    STATE NUMBER   4  ENERGY =    9.899415 EV
+    STATE NUMBER   5  ENERGY =   10.938400 EV
     MAX ERROR =  2.628E-03 / 1.000E-07
  ITERATION #                     3
-    CURRENT VECTORS   12 TO  17 (   6 VECTORS)
+    CURRENT VECTORS   16 TO  25 (  10 VECTORS)
     STATE NUMBER   1  ENERGY =    8.380713 EV
-    STATE NUMBER   2  ENERGY =    8.967746 EV
+    STATE NUMBER   2  ENERGY =    8.967745 EV
     STATE NUMBER   3  ENERGY =    9.688053 EV
-    MAX ERROR =  1.199E-04 / 1.000E-07
+    STATE NUMBER   4  ENERGY =    9.899269 EV
+    STATE NUMBER   5  ENERGY =   10.320716 EV
+    MAX ERROR =  3.837E-03 / 1.000E-07
  ITERATION #                     4
-    CURRENT VECTORS   18 TO  21 (   4 VECTORS)
+    CURRENT VECTORS   26 TO  31 (   6 VECTORS)
     STATE NUMBER   1  ENERGY =    8.378852 EV
-    STATE NUMBER   2  ENERGY =    8.967746 EV
+    STATE NUMBER   2  ENERGY =    8.967745 EV
     STATE NUMBER   3  ENERGY =    9.688024 EV
-    MAX ERROR =  7.429E-06 / 1.000E-07
+    STATE NUMBER   4  ENERGY =    9.899269 EV
+    STATE NUMBER   5  ENERGY =   10.207535 EV
+    MAX ERROR =  6.383E-05 / 1.000E-07
  ITERATION #                     5
-    CURRENT VECTORS   22 TO  25 (   4 VECTORS)
+    CURRENT VECTORS   32 TO  37 (   6 VECTORS)
     STATE NUMBER   1  ENERGY =    8.378766 EV
-    STATE NUMBER   2  ENERGY =    8.967746 EV
+    STATE NUMBER   2  ENERGY =    8.967745 EV
     STATE NUMBER   3  ENERGY =    9.688023 EV
-    MAX ERROR =  5.538E-07 / 1.000E-07
+    STATE NUMBER   4  ENERGY =    9.899269 EV
+    STATE NUMBER   5  ENERGY =   10.206286 EV
+    MAX ERROR =  3.119E-06 / 1.000E-07
  ITERATION #                     6
-    CURRENT VECTORS   26 TO  27 (   2 VECTORS)
+    CURRENT VECTORS   38 TO  41 (   4 VECTORS)
     STATE NUMBER   1  ENERGY =    8.378763 EV
-    STATE NUMBER   2  ENERGY =    8.967746 EV
+    STATE NUMBER   2  ENERGY =    8.967745 EV
     STATE NUMBER   3  ENERGY =    9.688023 EV
-    MAX ERROR =  8.616E-08 / 1.000E-07
+    STATE NUMBER   4  ENERGY =    9.899269 EV
+    STATE NUMBER   5  ENERGY =   10.206266 EV
+    MAX ERROR =  9.372E-08 / 1.000E-07
   
    ---------------------------------  
      R-TDDFT CALCULATION CONVERGED
    ---------------------------------  
- NUMBER OF USED VECTORS / MAX =  27 / 150
+ NUMBER OF USED VECTORS / MAX =  41 / 240
  NUMBER OF ITERATIONS   / MAX =   6 / 100
  NUMBER OF SINGLE EXCITATIONS =   240
  NUMBER OF ATOMIC ORBITALS    =  38
@@ -1059,15 +1070,15 @@
      OCC     VIR  AMPLITUDE      AMPLITUDE
       I       A     X(I->A)        Y(A->I)
      ---     ---   --------       --------
-      8       9   -0.994222       0.121785
-      4      10   -0.077281      -0.026890
-      3      12    0.038020       0.021409
-      5      13    0.071260       0.027055
-      6      14    0.097208       0.040738
-      7      17   -0.067734      -0.032729
-      6      20    0.064683       0.039318
+      8       9    0.994222      -0.121785
+      4      10    0.077281       0.026890
+      3      12   -0.038020      -0.021409
+      5      13   -0.071260      -0.027055
+      6      14   -0.097208      -0.040738
+      7      17    0.067734       0.032729
+      6      20   -0.064683      -0.039318
 
- STATE #   2  ENERGY =    8.967746 EV
+ STATE #   2  ENERGY =    8.967745 EV
  OSCILLATOR STRENGTH =    0.000000
  LAMBDA DIAGNOSTIC   =    0.532 (RYDBERG/CHARGE TRANSFER CHARACTER)
  SYMMETRY OF STATE   =    A   
@@ -1075,9 +1086,9 @@
      OCC     VIR  AMPLITUDE      AMPLITUDE
       I       A     X(I->A)        Y(A->I)
      ---     ---   --------       --------
-      7       9    0.986216      -0.012884
-      8      11   -0.157510      -0.005510
-      7      19    0.048429      -0.001130
+      7       9    0.986231      -0.012885
+      8      11   -0.157419      -0.005512
+      7      19    0.048384      -0.001164
 
  STATE #   3  ENERGY =    9.688023 EV
  OSCILLATOR STRENGTH =    0.000405
@@ -1091,36 +1102,70 @@
       8      10   -0.997662       0.009270
       8      24    0.032364      -0.003515
 
+ STATE #   4  ENERGY =    9.899269 EV
+ OSCILLATOR STRENGTH =    0.000000
+ LAMBDA DIAGNOSTIC   =    0.421 (RYDBERG/CHARGE TRANSFER CHARACTER)
+ SYMMETRY OF STATE   =    A   
+                 EXCITATION  DE-EXCITATION
+     OCC     VIR  AMPLITUDE      AMPLITUDE
+      I       A     X(I->A)        Y(A->I)
+     ---     ---   --------       --------
+      7       9   -0.157920       0.009343
+      8      11   -0.985875       0.007416
+      8      21    0.057524      -0.001560
+
+ STATE #   5  ENERGY =   10.206266 EV
+ OSCILLATOR STRENGTH =    0.000000
+ LAMBDA DIAGNOSTIC   =    0.564 (RYDBERG/CHARGE TRANSFER CHARACTER)
+ SYMMETRY OF STATE   =    A   
+                 EXCITATION  DE-EXCITATION
+     OCC     VIR  AMPLITUDE      AMPLITUDE
+      I       A     X(I->A)        Y(A->I)
+     ---     ---   --------       --------
+      3       9    0.075929       0.004537
+      6       9   -0.969093       0.010185
+      8      12    0.223037       0.000802
+      6      19   -0.073469       0.001635
+
                           SUMMARY OF TDDFT RESULTS
 
    STATE             ENERGY     EXCITATION  TRANSITION DIPOLE, A.U.  OSCILLATOR
    0 ->             HARTREE          EV         X       Y       Z     STRENGTH
    0  A          -78.5299343886    0.000
-   1  A          -78.2220204978    8.379    -1.3847  0.0000 -0.0003    0.3936
-   2  A          -78.2003757800    8.968     0.0003 -0.0000 -0.0000    0.0000
+   1  A          -78.2220204978    8.379     1.3847 -0.0000  0.0003    0.3936
+   2  A          -78.2003758061    8.968     0.0003 -0.0000 -0.0000    0.0000
    3  A          -78.1739060826    9.688     0.0000 -0.0000  0.0413    0.0004
+   4  A          -78.1661429359    9.899    -0.0002 -0.0000  0.0000    0.0000
+   5  A          -78.1548610013   10.206     0.0000 -0.0000 -0.0000    0.0000
   
  TRANSITION        EXCITATION            TRANSITION DIPOLE, A.U.     OSCILLATOR
                        EV              X       Y       Z       DIP    STRENGTH
 
-  1  ->  2           0.589         -0.0000  0.0000 -0.0000   0.0000    0.0000
-  1  ->  3           1.309          0.0000 -0.0001  0.0000   0.0001    0.0000
-  2  ->  3           0.720         -0.0000  0.2063  0.0000   0.2063    0.0008
+  1  ->  2           0.589          0.0000 -0.0000  0.0000   0.0000    0.0000
+  1  ->  3           1.309         -0.0000  0.0001 -0.0000   0.0001    0.0000
+  1  ->  4           1.521          0.0000 -0.0001  0.0000   0.0001    0.0000
+  1  ->  5           1.828          0.0000  0.0000 -0.0108   0.0108    0.0000
+  2  ->  3           0.720         -0.0000  0.2062  0.0000   0.2062    0.0008
+  2  ->  4           0.932         -0.0001  0.0000 -0.0000   0.0001    0.0000
+  2  ->  5           1.239         -0.0001  0.0001  0.0000   0.0001    0.0000
+  3  ->  4           0.211         -0.0001  1.7936  0.0000   1.7936    0.0167
+  3  ->  5           0.518         -0.4392 -0.0001 -0.0001   0.4392    0.0024
+  4  ->  5           0.307         -0.0001  0.0002 -0.0000   0.0002    0.0000
 
  SELECTING EXCITED STATE IROOT=   1 AT E=      -78.2220204978
  AS THE STATE OF INTEREST.
 
  ..... DONE WITH TD-DFT EXCITATION ENERGIES .....
- STEP CPU TIME =     4.17 TOTAL CPU TIME =          7.8 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          8.2 SECONDS, CPU UTILIZATION IS    96.05%
-               594341  WORDS OF DYNAMIC MEMORY USED
- EXECUTION OF GAMESS TERMINATED NORMALLY 17:45:21 10-MAR-2022    
+ STEP CPU TIME =     6.23 TOTAL CPU TIME =          9.9 (      0.2 MIN)
+ TOTAL WALL CLOCK TIME=         10.2 SECONDS, CPU UTILIZATION IS    97.07%
+               835402  WORDS OF DYNAMIC MEMORY USED
+ EXECUTION OF GAMESS TERMINATED NORMALLY 15:24:13 11-MAR-2022    
  DDI: 263640 bytes (0.3 MB / 0 MWords) used by master data server.
 
  ----------------------------------------
  CPU timing information for all processes
  ========================================
- 0: 7.822 + 0.23 = 7.845
+ 0: 9.855 + 0.38 = 9.893
  ----------------------------------------
 Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
  ddikick.x: exited gracefully.
